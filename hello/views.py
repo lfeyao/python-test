@@ -9,8 +9,7 @@ from .models import Greeting
 
 # Create your views here.
 def index(request):
-    name = input("what is your name? ")
-    return HttpResponse('Hello! ' + name)
+    return HttpResponse("Hello! ")
 
 
 def db(request):
