@@ -6,12 +6,9 @@ from django.http import HttpResponse
 
 from .models import Greeting
 
-
-
 # Create your views here.
 def index(request):
-    return HttpResponse("Hello! ")
-
+    return HttpResponse("Hello!")
 
 def db(request):
 
@@ -19,5 +16,4 @@ def db(request):
     greeting.save()
 
     greetings = Greeting.objects.all()
-
     return render(request, 'db.html', {'greetings': greetings})
