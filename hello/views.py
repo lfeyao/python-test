@@ -1,13 +1,17 @@
 import os
 
 from django.shortcuts import render
+from django.shortcuts import render_to_response
+
 from django.http import HttpResponse
+
+from hello.models import posts
 
 from .models import Greeting
 
 # Create your views here.
 def index(request):
-    return HttpResponse("Hello!")
+    return render('test.html')
 
 def db(request):
     greeting = Greeting()
