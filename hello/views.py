@@ -11,7 +11,7 @@ from .models import Greeting
 
 # Create your views here.
 def index(request):
-    return render('test.html')
+    return render_to_response('test.html')
 
 def db(request):
     greeting = Greeting()
