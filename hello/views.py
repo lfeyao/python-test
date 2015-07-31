@@ -1,4 +1,5 @@
 import os
+import requests
 
 from django.shortcuts import render
 from django.http import HttpResponse
@@ -20,4 +21,3 @@ def db(request):
     greetings = Greeting.objects.all()
 
     return render(request, 'db.html', {'greetings': greetings})
-

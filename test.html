@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<title>jQuery listo Plugin Demo</title>
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+</head>
+
+<body>
+	<h1 align="center" style="margin:20px auto">Bucket List</h1>
+
+	<div class="container">
+        <div class="col-lg-12">
+            <section class="col-md-4">
+                <div class="panel panel-danger ">
+                    <div class="panel-heading">
+                        <form class="form-group" id="newTaskForm">
+                            <div class="input-group" style="margin-bottom:-40px;">
+                                <input class="form-control" type="text" id="newItemInput" placeholder="I want to...">
+                                <div class="input-group-addon" id="addtask"><a href="">Add</a></div>
+                            </div>
+                        </form>
+                        <div class='new-item-header'>
+                            <span id="newHeading">New</span>
+                            <a href="#newItem" class="pull-right pencil" id="newListItem" style="">&#9783;</a>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <ul class="list-group" id='newList'></ul>
+                    </div>
+                </div>
+            </section>
+            
+             <section class="col-md-4">
+                <div class="panel panel-warning ">
+                    <div class="panel-heading">
+                        Remaining Bucket List
+                    </div>
+                    <div class="panel-body">
+                        <ul class="list-group" id="currentList"></ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="col-md-4">
+                <div class="panel panel-success ">
+                    <div class="panel-heading">
+                        Done
+                    </div>
+                    <div class="panel-body">
+                        <ul class="list-group" id="archivedList"></ul>
+                    </div>
+                </div>
+            </section>
+            
+      </div>
+
+</body>
+
+</html>
