@@ -18,6 +18,6 @@ urlpatterns = patterns('',
 )
 
 if DEBUG:
-urlpatterns += patterns('',
-url(r'^static/(.*)$', 'django.views.static.serve', {'document_root': STATIC_ROOT_DEVELOPMENT, 'show_indexes': True}),
-)
+	urlpatterns += patterns('',
+	url(r'^static/(.*)$', 'django.views.static.serve', {'document_root': STATIC_ROOT_DEVELOPMENT, 'show_indexes': True}),
+	)
