@@ -113,6 +113,11 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 STATIC_ROOT = 'staticfiles'
 STATIC_URL = '/static/'
 
+</span>
+<pre>import os
+PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
+STATIC_ROOT_DEVELOPMENT = os.path.join(PROJECT_DIR, '../static')
+
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
@@ -121,3 +126,6 @@ STATICFILES_DIRS = (
 # https://warehouse.python.org/project/whitenoise/
 STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
+TEMPLATE_CONTEXT_PROCESSORS = (
+'django.core.context_processors.static',
+)
